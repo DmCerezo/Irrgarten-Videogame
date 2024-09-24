@@ -17,6 +17,14 @@ public class Irrgarten {
         // TODO code application logic here
         Directions dir = Directions.DOWN;
         System.out.println("El enumero es:" + dir);
+        
+        Weapon w = new Weapon(2.0f,5);
+        Shield s = new Shield(3.0f,4);
+        System.out.println(w.toString());
+        System.out.println(s.toString());
+
+        
+        
     }
     
 }

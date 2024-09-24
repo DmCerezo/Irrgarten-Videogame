@@ -4,6 +4,7 @@ module Irrgarten
       @power = power
       @uses = uses
     end
+
     def attack
       if
       @uses > 0
@@ -12,5 +13,10 @@ module Irrgarten
       end
       0
     end
+
+    def to_s
+      "W[#{@power},#{@uses}]"
+    end
+
   end
 end
