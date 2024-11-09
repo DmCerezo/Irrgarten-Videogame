@@ -10,7 +10,7 @@ package irrgarten;
  */
 public enum Directions {
     LEFT,
-    RIGTH,
+    RIGHT,
     UP,
     DOWN
 }

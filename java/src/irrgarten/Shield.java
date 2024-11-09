@@ -17,6 +17,10 @@ public class Shield {
         this.uses = uses;
     }
     
+    public Shield(){
+        this(protection = Dice.shieldPower(), uses = Dice.usesLeft());
+    }
+    
     public float protect(){
         if(this.uses > 0){
             this.uses--;
@@ -25,12 +29,15 @@ public class Shield {
         return 0;
     }
     
+    public boolean discard(){
+        return false;
+    }
+    
     public String toString(){
         String info;
         info = ("S["+protection+","+uses+"]");
         return info;
     }
 
-}
 
 }
